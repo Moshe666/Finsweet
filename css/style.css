@@ -20,13 +20,15 @@ body {
 
 .header__logo {
   margin-right: 40px;
-  margin-left: 15px;
 }
+
+.header__logo{}
+
 
 .logo {}
 
 .button {
-  margin-right: 36px;
+  display: inline-block;
   background-color: #FF6433;
   font-weight: 600;
   font-size: 18px;
@@ -43,6 +45,7 @@ body {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.03em;
+  margin-bottom: 8px;
 }
 
 .heading__title {
@@ -50,7 +53,7 @@ body {
   font-size: 58px;
   line-height: 76px;
   letter-spacing: -0.03em;
-  
+
 }
 
 .heading--text-center {
@@ -103,9 +106,6 @@ body {
 
 .header__nav-link:hover {
   color: #FF6433;
-
-
-
 }
 
 .header__verticalline {
@@ -180,15 +180,12 @@ body {
 
 }
 
-
-
 .header__body-inner {
   margin-top: 70px;
 }
 
 .header__content {
   margin-right: 30px;
-
   margin-top: 152px;
   color: #1E1B1B;
 }
@@ -200,6 +197,7 @@ body {
   letter-spacing: -0.03em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 614px;
+  margin-bottom: 32px;
 
 
 }
@@ -208,11 +206,8 @@ body {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  margin-top: 32px;
+  margin-bottom: 50px;
 }
-
-
-
 
 .button:hover {
   transform: scale(1.05);
@@ -225,6 +220,7 @@ body {
   transition: all .4s;
   font-weight: 500;
   line-height: 19px;
+  margin-left: 36px;
 
 }
 
@@ -235,7 +231,9 @@ body {
 
 
 .header__play:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  box-shadow: 5px 5px 0px 0px #FF6433;
+  border-radius: 4px;
 }
 
 .header__content-text {
@@ -245,7 +243,7 @@ body {
   color: #1E1B1B;
   position: relative;
   margin-left: 50px;
-  margin-top: 50px;
+
 }
 
 .header__content-text span {
@@ -275,6 +273,8 @@ body {
   max-width: 595px;
   max-height: 632px;
   margin-top: 50px;
+  height: 100%;
+  width: 100%;
 }
 
 .header__body-inner {
@@ -363,15 +363,20 @@ body {
 
 
 
-.offer__inner {}
+.offer__inner {
+  padding-bottom: 128px;
+}
 
 .offer__heading {
   padding-top: 128px;
-  margin-bottom: 8px;
+  margin-bottom: 64px;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 131%;
+  letter-spacing: -0.03em;
 }
 
 .offer__service {
-  margin-top: 64px;
   display: grid;
   grid-template: repeat(2, auto) / repeat(4, 1fr);
   align-items: center;
@@ -396,17 +401,17 @@ body {
 .offer__service-item:hover {
   background: #FF6433;
   color: #fff;
-
+  transform: scale(1.05);
 }
 
 .offer__service-icon path {
   transition: all .5s;
 }
 
-
-.offer__service-icon:hover path {
+.offer__service-item:hover path {
   fill: #fff;
 }
+
 
 .offer__service-name {
   font-weight: 600;
@@ -442,4 +447,229 @@ body {
 .offer__button:hover {
   color: #FF6433;
   transform: scale(1.1);
+}
+
+
+
+/* ==================ABOUT========================== */
+/* ==================ABOUT========================== */
+
+
+
+.about {
+  color: #1E1B1B;
+}
+
+.about__inner {
+  margin-top: 134px;
+  margin-bottom: 134px;
+}
+
+.about__finsweet {
+  display: flex;
+
+}
+
+.about__finsweet-content {
+  max-width: 554px;
+}
+
+.about__heading {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+
+}
+
+.about__button {
+  display: inline-block;
+  transition: all .4s;
+}
+
+.about__button:hover {
+  transform: scale(1.05);
+}
+
+.about__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 0.6;
+  max-width: 437px;
+  margin-bottom: 32px;
+
+}
+
+
+.about__finsweet-steps {
+  margin-left: 131px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.about__card {
+  margin-bottom: 16px;
+}
+
+.about__card-circle {
+  display: flex;
+  align-items: center;
+}
+
+.about__card-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.about__card-subtitle {
+  display: flex;
+  align-items: center;
+}
+
+
+.about__card-line {
+  margin-left: 34px;
+}
+
+.about__card-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  opacity: 0.6;
+  padding-left: 60px;
+  max-width: 426px;
+}
+
+.about__card:last-child p {
+  margin-left: 40px;
+}
+
+
+/* ==========================TOUCH========================== */
+/* ==========================TOUCH========================== */
+
+
+.touch {
+  background: url("../image/bg.jpg") center /cover no-repeat;
+
+}
+
+.touch__content {
+  background-color: #FF6433;
+  position: relative;
+  /* max-width: 729px; */
+  z-index: 1;
+  display: inline-block;
+  padding: 128px 80px;
+
+}
+
+
+.touch__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 48px;
+  max-width: 617px;
+
+}
+
+.touch__title {
+  margin-bottom: 48px;
+}
+
+.touch__button {
+  background-color: #000000;
+}
+
+/* ===================EXPIRIENCE======================== */
+/* ===================EXPIRIENCE======================== */
+
+.expirience {
+  padding: 48px 0;
+}
+
+
+.expirience__list {
+  display: flex;
+
+
+}
+
+.expirience-item {
+  margin-right: 185px;
+}
+
+.expirience-item:last-child {
+  margin-right: 0;
+}
+
+.expirience-title {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin-bottom: 2px;
+  color: #661CE7;
+  display: flex;
+}
+
+.expirience-subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #1E1B1B;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+
+
+/* ===================BRANDS======================== */
+/* ===================BRANDS======================== */
+
+.brands{
+  background-color: #E2E6E9;
+  padding: 128px 0px 128px 0px;
+}
+
+.brands__heading h2{
+  margin-bottom: 31px;
+}
+
+.brands__logos{
+  display: grid;
+  grid-template: auto auto/ repeat(5, 1fr);
+  gap: 39px ;
+}
+
+
+.brands__svg{
+  transition: all 0.3s;
+
+}
+
+
+.brands__svg:hover path{
+  transition: all .3s;
+  fill: #FF6433;
+}
+
+.brands__svg:hover{
+  transition: all 1s;
+  border: #000000 1px solid;
 }
