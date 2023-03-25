@@ -418,7 +418,7 @@ body {
   grid-template: repeat(2, auto) / repeat(4, 1fr);
   align-items: center;
   gap: 8px;
-
+  margin-bottom: 32px;
 }
 
 .offer__service-item {
@@ -431,6 +431,7 @@ body {
   transition: all .5s;
   min-height: 218px;
   white-space: nowrap;
+  
 }
 
 
@@ -470,20 +471,26 @@ body {
   overflow: hidden;
 }
 
-.offer__button::after {
-  content: "";
-  display: flex;
-  background: url("../image/offer/arrow-right.svg");
-  width: 53px;
-  height: 16px;
-  margin-left: 16px;
-  align-items: center;
 
+.offer__about-link {
+  display: flex;
+  align-items: center;
+  float: right;
+  transition: all .3s;
 }
 
-.offer__button:hover {
+.offer__about-link:hover, .offer__about-link:hover path {
+  fill: #FF6433;
   color: #FF6433;
   transform: scale(1.1);
+}
+
+.offer__about-text {
+  text-align: right;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  margin-right: 16px;
 }
 
 
@@ -1588,12 +1595,21 @@ body {
   .header__body-inner {
     margin: 0;
   }
+
+  /* ---------------------------OFFER */
+  .heading__title{
+    font-size: 48px;
+  }
 }
 
 /* ===============================940=================== */
 /* ----------------HEADER BODY-------------- */
 @media (max-width:940px) {
+  .heading__title{
+    font-size: 46px;
+  }
 
+  
 
   .header__main {
     flex-direction: column;
@@ -1614,10 +1630,83 @@ body {
   .header__service {
     display: none;
   }
-
-  .button {}
+/* ----------------OFFER-------------- */
+.offer__service-name{
+  font-size: 20px;
+}
 }
 
+/* ===============================800=================== */
+/* ----------------OFFER-------------- */
+
+@media (max-width:800px) {
+
+  .heading__title{
+    font-size: 44px;
+
+  }
+  .offer__service-name{
+    font-size: 18px;
+  }
+.offer__service-icon svg{
+  transform: scale(0.8);
+}
+
+.offer__about-text{
+  font-size: 15px;
+}
+
+.offer__about-link svg{
+  transform: scale(0.8);
+}
+
+.offer__service-item{
+  min-height: 170px;
+}
+}
+
+/* ===============================730=================== */
+/* ----------------OFFER-------------- */
+@media (max-width:730px){
+  .heading__subtitle{
+    font-size: 18px;
+  }
+  .heading__title{
+    font-size: 36px;
+    line-height: 130%;
+    
+  }
+  .offer__service-name{
+    font-size: 16px;
+  }
+.offer__service-icon svg{
+  transform: scale(0.7);
+}
+}
+
+/* ===============================600=================== */
+/* ----------------OFFER-------------- */
+@media (max-width:600px){
+  .heading__subtitle{
+    font-size: 16px;
+  }
+  .heading__title{
+    font-size: 30px;
+    line-height: 120%;
+    
+  }
+
+  .offer__service{
+    grid-template: 1fr / 1fr 1fr;
+    width: 100%;
+    
+  }
+
+  .offer__service-item{
+    min-height: 200px;
+  }
+  
+}
 /* ===============================530=================== */
 /* ----------------HEADER BODY-------------- */
 @media (max-width:530px) {
@@ -1644,6 +1733,24 @@ body {
   .header__content-text {
     font-size: 16px;
   }
+  /* ----------------OFFER-------------- */
+  .heading__subtitle{
+    font-size: 14px;
+  }
+  .heading__title{
+    font-size: 24px;
+    line-height: 110%;
+    
+  }
+  .offer__service-item{
+    min-height: 170px;
+  }
+  .offer__service-name{
+    font-size: 14px;
+  }
+.offer__service-icon svg{
+  transform: scale(0.6);
+}
 }
 
 /* ===============================450=================== */
@@ -1681,6 +1788,15 @@ body {
   .header__content-text::before {
     display: none;
   }
+  /* ----------------OFFER-------------- */
+  .heading__subtitle{
+    font-size: 12px;
+  }
+  .heading__title{
+    font-size: 20px;
+    line-height: 110%;
+    
+  }
 }
 
 
@@ -1714,5 +1830,34 @@ body {
   .header__content-text::before {
     display: none;
   }
+/* ----------------OFFER-------------- */
+.heading__subtitle{
+  font-size: 10px;
+}
+.heading__title{
+  font-size: 18px;
+  line-height: 110%;
+  
+}
 
+.offer__service-item{
+  min-height: 140px;
+}
+.offer__service-name{
+  font-size: 12px;
+}
+.offer__service-icon svg{
+transform: scale(0.6);
+}
+.offer__about-text{
+  font-size: 12px;
+}
+
+.offer__about-link svg{
+  transform: scale(0.6);
+}
+
+.offer__about-link{
+  
+}
 }
