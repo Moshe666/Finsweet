@@ -56,7 +56,40 @@ $(function () {
     }
   })
 
+  let map;
 
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 40.705186968505195, lng: -74.01377966739278 },
+        zoom: 14,
+    });
+  }
+  
+  window.initMap = initMap;
+
+  $(".header__nav-list a, .header__top-btn, .footer__bottom-link, .header__content-btn, .about__button, .touch__button").on("click", function (e) {
+    e.preventDefault()
+    var id = $(this).attr('href'),
+      top = $(id).offset().top
+    $('body,html').animate({ scrollTop: top }, 800)
+  })
+
+// ============================= BURGER ======================
+
+  $('.burger, .overlay').on('click', function (e) {
+    e.preventDefault()
+    $('.header__top').toggleClass('header__top--open')
+    $('.overlay').toggleClass('overlay--show')
+  })
+
+
+  setInterval(() => {
+    if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
+        $('.burger').addClass('burger--follow')
+    } else {
+        $('.burger').removeClass('burger--follow')
+    }
+}, 0);
 
 
 
