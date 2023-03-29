@@ -100,6 +100,18 @@ function initMap() {
     e.preventDefault()
     $('.header__top').toggleClass('header__top--open')
     $('.overlay').toggleClass('overlay--show')
+    $('body').toggleClass('lock')
+    
+
+  })
+
+  $('.header__nav-link').on('click', function (e) {
+    e.preventDefault()
+    $('.header__top').removeClass('header__top--open')
+    $('.overlay').removeClass('overlay--show')
+    $('body').removeClass('lock')
+    
+
   })
 
 
