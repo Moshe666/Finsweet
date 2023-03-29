@@ -891,7 +891,13 @@ body.lock {
   margin-right: 16px;
   overflow: hidden;
   border-radius: 50%;
+  
 
+}
+
+.customers__avatar img{
+  width: 100%;
+  height: auto;
 }
 
 .customers__name {
@@ -1233,8 +1239,6 @@ body.lock {
 }
 
 #map {
-  height: 512px;
-  width: 500px;
   transform: translateY(-68%);
 }
 
@@ -1252,8 +1256,6 @@ body.lock {
 /* ===================FOOTER======================== */
 /* ===================FOOTER======================== */
 
-
-.footer {}
 
 .footer__top {
   background: #1E1B1B;
@@ -2245,9 +2247,11 @@ body.lock {
     font-size: 12px
   }
 
-  .customers__avatar{
+  /* .customers__avatar img{
+    width: 100%;
+    height: auto;
 
-  }
+  } */
   /* ---------------------------Contact */
 
 
