@@ -2,7 +2,14 @@ body {
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
   font-size: 16px;
+
 }
+
+body.lock {
+  overflow: hidden;
+
+}
+
 
 .wrapper {
   min-height: 100%;
@@ -44,7 +51,7 @@ body {
 
 .burger:hover {
   transform: scale(1.1);
-  rotate: 90deg;
+
 }
 
 .burger--follow {
@@ -62,11 +69,9 @@ body {
 .header__logo:hover {
   transform: scale(1.1);
   transition: all .3s;
-  rotate: 360deg;
+
 }
 
-
-.logo {}
 
 .button {
   display: inline-block;
@@ -886,6 +891,7 @@ body {
   margin-right: 16px;
   overflow: hidden;
   border-radius: 50%;
+
 }
 
 .customers__name {
@@ -1041,7 +1047,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 
 .questions__square {
@@ -1383,16 +1389,16 @@ body {
     max-width: 560px;
   }
 
-  .expirience__item{
+  .expirience__item {
     margin-right: 140px;
 
   }
 
-  .brands__logos svg{
+  .brands__logos svg {
     width: 100%;
   }
 
-  
+
 }
 
 /* ===========================1220============================ */
@@ -1432,21 +1438,22 @@ body {
     font-size: 50px;
   }
 
-/* --------------EXPIRIENCE */
-.expirience {
-  padding: 20px 0px;
-}
-.expirience__list {
-  display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-}
+  /* --------------EXPIRIENCE */
+  .expirience {
+    padding: 20px 0px;
+  }
 
-/* ------BLOG----------- */
+  .expirience__list {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
 
-.blog__list{
-  grid-template: repeat(3, auto) / repeat(2, 1fr);
-    
-}
+  /* ------BLOG----------- */
+
+  .blog__list {
+    grid-template: repeat(3, auto) / repeat(2, 1fr);
+
+  }
 }
 
 /* ===========================1100============================ */
@@ -1596,7 +1603,7 @@ body {
     padding: 5px 50px;
     display: block;
     margin: 24px auto;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .header__logo {
@@ -1620,6 +1627,7 @@ body {
 
   .header__user-nav {
     margin: 0;
+    padding-bottom: 50px;
   }
 
   /* ----------------ABOUT-------------- */
@@ -1675,41 +1683,43 @@ body {
   /* ---------------------------Slider */
 
 
-  .customers__name{
+  .customers__name {
     font-size: 16px;
   }
 
-  .customers__city{
+  .customers__city {
     font-size: 16px;
   }
 
-  .customers__quote{
+  .customers__quote {
     font-size: 16px;
 
   }
-  .customers__slide{
+
+  .customers__slide {
     padding: 35px;
   }
 
-/* ---------------------------Contact */
+  /* ---------------------------Contact */
 
-.contact__form{
-  margin-right: 30px;
-}
+  .contact__form {
+    margin-right: 30px;
+  }
 
-.contact__sand{
-  flex-direction: column;
-  align-items: start;
-}
+  .contact__sand {
+    flex-direction: column;
+    align-items: start;
+  }
 
-.contact__checkbox-label{
-  margin-bottom: 30px;
-}
-/* ---------------------------Footer */
+  .contact__checkbox-label {
+    margin-bottom: 30px;
+  }
 
-.footer__bottom-link{
-  font-size: 14px;
-}
+  /* ---------------------------Footer */
+
+  .footer__bottom-link {
+    font-size: 14px;
+  }
 }
 
 /* ===============================940=================== */
@@ -1752,20 +1762,21 @@ body {
     line-height: 110%;
     max-width: 230px;
   }
-/* ----------------Footer-------------- */
-  .footer__bottom-nav{
+
+  /* ----------------Footer-------------- */
+  .footer__bottom-nav {
     flex-direction: column;
   }
 
-  .footer__bottom-logo{
+  .footer__bottom-logo {
     margin-bottom: 20px;
   }
 
-  .footer__bottom-list{
+  .footer__bottom-list {
     margin-bottom: 20px;
   }
 
-  .footer__bottom-copyright{
+  .footer__bottom-copyright {
     font-size: 12px;
   }
 
@@ -1803,53 +1814,58 @@ body {
 
   /* ----------------BRANDS-------------- */
 
-  .brands__logos{
+  .brands__logos {
     grid-template-columns: repeat(2, 1fr);
     margin-right: 0;
     justify-content: center;
     gap: 0px;
   }
 
-  
+
 
   /* ----------------ABOUT-------------- */
-  
-  .about__finsweet-content{
+
+  .about__finsweet-content {
     margin: 0 auto;
   }
-  
-  .about__finsweet{
+
+  .about__finsweet {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+
   }
-  .about__button{
+
+  .about__button {
     margin-bottom: 20px;
     font-size: 14px;
   }
-  .about__finsweet-steps{
+
+  .about__finsweet-steps {
     margin: 0 auto;
-    
+
   }
 
-  .about__card-img svg{
+  .about__card-img svg {
     margin-left: 25px;
-    
+
   }
-  .about__card-circle{
+
+  .about__card-circle {
     flex-direction: column;
-    
+
   }
-  .about__card-text{
+
+  .about__card-text {
     margin: 0;
     padding: 0;
   }
-  .about__card-subtitle{
+
+  .about__card-subtitle {
     flex-direction: column;
   }
 
-  .about__heading h2{
+  .about__heading h2 {
     margin: 0 auto;
     max-width: 400px;
   }
@@ -1876,10 +1892,11 @@ body {
     transform: scale(0.7);
   }
 
-  .questions__acc-title{
-    font-size: 16px;
+  .questions__acc-title {
+    font-size: 12px;
   }
-  .questions__square{
+
+  .questions__square {
     width: 40px;
     height: 37px;
   }
@@ -1887,58 +1904,63 @@ body {
   .questions__square::after, .questions__square::before {
     right: 14px;
     width: 14px;
+  }
+
+  .questions__link-box {
+    padding: 30px;
+  }
+
+  .questions__acc-text {
+    font-size: 12px;
+  }
+
+  /* ---------------------------Contact */
+
+  .contact__subtitle {
+    font-size: 12px;
+  }
+
+  .contact__text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .contact__input::placeholder {
+    font-size: 12px;
+  }
+
+
+
+
+  .contact__checkbox-label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .contact__form-btn {
+    font-size: 14px;
+
+
+  }
+
+
+  /* ----------------Footer-------------- */
+
+  .footer__top-subtitle {
+    font-size: 12px;
+
+  }
+
+  .footer__top-text {
+    font-size: 16px;
+  }
+
+  .footer__heading h2 {
+    font-size: 40px;
+  }
+
 }
 
-.questions__link-box {
-  padding: 30px;
-}
-.questions__acc-text{
-  font-size: 14px;
-}
-
-/* ---------------------------Contact */
-
-.contact__subtitle{
-  font-size: 12px;
-}
-
-.contact__text{
-  font-size: 13px;
-  line-height: 20px;
-}
-
-.contact__input::placeholder{
-  font-size: 12px;
-}
-
-.contact__checkbox-label{
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.contact__form-btn{
-  font-size: 14px;
-
-
-}
-
-
-/* ----------------Footer-------------- */
-
-.footer__top-subtitle{
-  font-size: 12px;
-
-}
-
-.footer__top-text{
-  font-size: 16px;
-}
-
-.footer__heading h2{
-  font-size: 40px;
-}
-
-}
 /* ===============================600=================== */
 /* ----------------OFFER-------------- */
 @media (max-width:600px) {
@@ -1962,8 +1984,12 @@ body {
     min-height: 200px;
   }
 
-  .blog__filter-btn{
+  .blog__filter-btn {
     font-size: 18px;
+  }
+
+  #map{
+    
   }
 
 
@@ -1971,35 +1997,41 @@ body {
 
   .expirience__list {
     font-size: 40px;
-    
-    
+
+
   }
-  .expirience__item{
+
+  .expirience__item {
     margin-right: 10px;
   }
-  .expirience__subtitle{
+
+  .expirience__subtitle {
     font-size: 16px;
   }
+
   /* ----------------Slider-------------- */
 
-.customers__slider-btn{
-  width: 38px;
+  .customers__slider-btn {
+    width: 38px;
     height: 38px;
-}
+  }
 
-  .customers__slider-prev svg{
+  .customers__slider-prev svg {
     width: 18px;
     height: 13px;
   }
-  .customers__slider-next svg{
+
+  .customers__slider-next svg {
     width: 18px;
     height: 13px;
   }
+
   /* ----------------Footer-------------- */
-  .footer__top-content{
+  .footer__top-content {
     margin-right: 40px;
   }
-  .footer__heading h2{
+
+  .footer__heading h2 {
     font-size: 36px;
   }
 }
@@ -2054,68 +2086,73 @@ body {
   .offer__service-icon svg {
     transform: scale(0.6);
   }
-/* ----------------TOUCH-------------- */
-  .touch__heading h2{
+
+  /* ----------------TOUCH-------------- */
+  .touch__heading h2 {
     font-size: 36px;
     line-height: 110%;
-    
+
   }
-  .touch__content{
+
+  .touch__content {
     padding: 60px 80px;
   }
-  .touch__button{
+
+  .touch__button {
     font-size: 16px;
     padding: 12px 40px
   }
 
-  .touch{
+  .touch {
     background: none;
   }
-   /* ----------------Slider-------------- */
 
-.customers__slider-btn{
-  display: none;
-}
+  /* ----------------Slider-------------- */
 
-.customers__quote{
-  line-height: 120%;
-  font-size: 14px;
-}
+  .customers__slider-btn {
+    display: none;
+  }
 
-.customers__slider-buttons{
-  margin: 0;
-}
+  .customers__quote {
+    line-height: 120%;
+    font-size: 14px;
+  }
 
-.questions__square{
-  width: 40px;
-  height: 37px;
-}
+  .customers__slider-buttons {
+    margin: 0;
+  }
 
-.questions__square::after, .questions__square::before {
-  right: 14px;
-  width: 14px;
-}
+  .questions__square {
+    width: 40px;
+    height: 37px;
+  }
 
-/* ----------------Footer-------------- */
-.footer__top-inner{
-  flex-direction: column;
-}
-.footer__top-content{
-  margin: 0;
-  margin-bottom: 30px;
-}
+  .questions__square::after, .questions__square::before {
+    right: 14px;
+    width: 14px;
+  }
 
-.footer__bottom-list{
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  
-}
+  /* ----------------Footer-------------- */
+  .footer__top-inner {
+    flex-direction: column;
+  }
 
-.footer__bottom-item{
-  margin: 0;
-  margin-bottom: 10px;
-}
+  .footer__top-content {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer__bottom-list {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .footer__bottom-item {
+    margin: 0;
+    margin-bottom: 10px;
+  }
 
 }
 
@@ -2143,12 +2180,14 @@ body {
     font-size: 12px;
   }
 
+
   .header__content-text span {
     font-size: 10px;
   }
 
   .header__content-text {
     font-size: 13px;
+    margin: 0;
   }
 
   .header__content-text::before {
@@ -2165,45 +2204,68 @@ body {
     line-height: 110%;
 
   }
-  
 
-  .blog__list{
+
+  .blog__list {
     grid-template: repeat(6, auto) / 1fr;
     gap: 20px 0;
   }
 
-  .blog__link-title{
+  .blog__link-title {
 
     font-size: 16px;
   }
-  .blog__link-text{
+
+  .blog__link-text {
     font-size: 12px;
   }
-  .blog__link-date{
+
+  .blog__link-date {
     font-size: 12px;
   }
-  .blog__link-content:hover{
+
+  .blog__link-content:hover {
     transform: scale(1.05);
     box-shadow: none;
   }
 
-/* ---------------------------Contact */
+  /* -----------------Slider */
+
+
+  .customers__name {
+    font-size: 12px;
+    /* line-height: 6px; */
+  }
+
+  .customers__city {
+    font-size: 10px;
+  }
+
+  .customers__quote {
+    font-size: 12px
+  }
+
+  .customers__avatar{
+
+  }
+  /* ---------------------------Contact */
 
 
 
-.contact__box{
-  flex-direction: column;
-  
-}
+  .contact__box {
+    flex-direction: column;
+    
 
-.contact__form{
-  margin-bottom: 35px;
-  margin-right: 35px;
-}
+  }
 
-.contact__form-btn{
-  font-size: 12px;
-}
+  .contact__form {
+    margin-bottom: 35px;
+    margin-right: 35px;
+  }
+
+  .contact__form-btn {
+    font-size: 12px;
+  }
 
 
 
@@ -2273,68 +2335,72 @@ body {
   }
 
   /* ----------------ABOUT-------------- */
-  
-  .about__finsweet-content{
+
+  .about__finsweet-content {
     margin: 0 auto;
   }
-  
-  .about__finsweet{
+
+  .about__finsweet {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+
   }
-  .about__button{
+
+  .about__button {
     margin-bottom: 20px;
     font-size: 14px;
     padding: 12px 35px;
   }
-  .about__finsweet-steps{
+
+  .about__finsweet-steps {
     margin: 0 auto;
-    
-    
+
+
   }
 
-  .about__card-img svg{
+  .about__card-img svg {
     margin-left: 34px;
     transform: scale(0.8);
   }
-  
-  .about__card-circle{
+
+  .about__card-circle {
     flex-direction: column;
-    
+
   }
-  .about__card-text{
+
+  .about__card-text {
     margin: 0;
     padding: 0;
     font-size: 12px;
     max-width: 300px;
   }
-  .about__card-subtitle{
+
+  .about__card-subtitle {
     flex-direction: column;
   }
 
-  .about__heading h2{
+  .about__heading h2 {
     font-size: 35px;
     max-width: 400px;
   }
 
-  .about__text{
+  .about__text {
     font-size: 12px;
   }
 
   /* ----------------EXPIRIENCE */
 
-.expirience__title{
-  font-size: 36px;
-}
+  .expirience__title {
+    font-size: 36px;
+  }
 
-.expirience__item{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  .expirience__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
   .expirience__list {
     display: grid;
@@ -2342,14 +2408,13 @@ body {
     align-items: center;
     text-align: center;
   }
+
   /* ----------------Footer */
-.footer__top-subtitle{
-  font-size: 10px;
-}
-  .footer__top-text{
+  .footer__top-subtitle {
+    font-size: 10px;
+  }
+
+  .footer__top-text {
     font-size: 12px;
   }
 }
-
-
-
