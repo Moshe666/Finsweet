@@ -21,6 +21,7 @@ $(function () {
     $(this).addClass('blog__filter-item--active')
   })
 
+  // ============================= SLAIDER =============================
   $('.customers__slider').slick({
     infinite: true,
     slidesToShow: 2,
@@ -29,9 +30,27 @@ $(function () {
     draggable: false,
     dots: true,
     appendDots: $('.customers__slider-buttons'),
+    
+    dots: true,
+        appendDots: $('.customers__slider-buttons'),
+        responsive: [
+            {
+                breakpoint: 730,
+                settings: {
+                    slidesToShow: 1
+                },
+            },
+            {
+                breakpoint: 570,
+                settings: {
+                    draggable: true,
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+        ],
 
   })
-   // ============================= SLAIDER =============================
   $('.customers__slider-prev').on('click', function (e) {
     e.preventDefault()
     $('.customers__slider').slick('slickPrev')
@@ -40,6 +59,7 @@ $(function () {
     e.preventDefault()
     $('.customers__slider').slick('slickNext')
   })
+
 
   // ============================= ACCORDEON ======================
 
