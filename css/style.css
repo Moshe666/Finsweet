@@ -1041,6 +1041,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .questions__square {
@@ -1079,6 +1080,7 @@ body {
   letter-spacing: -0.03em;
   color: #1E1B1B;
   position: relative;
+  margin-right: 10px;
 }
 
 .questions__acc-text {
@@ -1096,7 +1098,7 @@ body {
 /* ===================CONTACT======================== */
 
 .main__contact {
-  padding: 122px 122px;
+  padding: 122px 0px 122px;
   margin-bottom: 400px;
 }
 
@@ -1158,6 +1160,7 @@ body {
 .contact__checkbox-label {
   display: flex;
   margin-right: 50px;
+  line-height: 27px;
 }
 
 .contact__form-checkbox {
@@ -1668,6 +1671,45 @@ body {
   .heading__title {
     font-size: 48px;
   }
+
+  /* ---------------------------Slider */
+
+
+  .customers__name{
+    font-size: 16px;
+  }
+
+  .customers__city{
+    font-size: 16px;
+  }
+
+  .customers__quote{
+    font-size: 16px;
+
+  }
+  .customers__slide{
+    padding: 35px;
+  }
+
+/* ---------------------------Contact */
+
+.contact__form{
+  margin-right: 30px;
+}
+
+.contact__sand{
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact__checkbox-label{
+  margin-bottom: 30px;
+}
+/* ---------------------------Footer */
+
+.footer__bottom-link{
+  font-size: 14px;
+}
 }
 
 /* ===============================940=================== */
@@ -1710,6 +1752,23 @@ body {
     line-height: 110%;
     max-width: 230px;
   }
+/* ----------------Footer-------------- */
+  .footer__bottom-nav{
+    flex-direction: column;
+  }
+
+  .footer__bottom-logo{
+    margin-bottom: 20px;
+  }
+
+  .footer__bottom-list{
+    margin-bottom: 20px;
+  }
+
+  .footer__bottom-copyright{
+    font-size: 12px;
+  }
+
 }
 
 /* ===============================800=================== */
@@ -1816,8 +1875,70 @@ body {
   .offer__service-icon svg {
     transform: scale(0.7);
   }
+
+  .questions__acc-title{
+    font-size: 16px;
+  }
+  .questions__square{
+    width: 40px;
+    height: 37px;
+  }
+
+  .questions__square::after, .questions__square::before {
+    right: 14px;
+    width: 14px;
 }
 
+.questions__link-box {
+  padding: 30px;
+}
+.questions__acc-text{
+  font-size: 14px;
+}
+
+/* ---------------------------Contact */
+
+.contact__subtitle{
+  font-size: 12px;
+}
+
+.contact__text{
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.contact__input::placeholder{
+  font-size: 12px;
+}
+
+.contact__checkbox-label{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.contact__form-btn{
+  font-size: 14px;
+
+
+}
+
+
+/* ----------------Footer-------------- */
+
+.footer__top-subtitle{
+  font-size: 12px;
+
+}
+
+.footer__top-text{
+  font-size: 16px;
+}
+
+.footer__heading h2{
+  font-size: 40px;
+}
+
+}
 /* ===============================600=================== */
 /* ----------------OFFER-------------- */
 @media (max-width:600px) {
@@ -1859,7 +1980,30 @@ body {
   .expirience__subtitle{
     font-size: 16px;
   }
+  /* ----------------Slider-------------- */
+
+.customers__slider-btn{
+  width: 38px;
+    height: 38px;
 }
+
+  .customers__slider-prev svg{
+    width: 18px;
+    height: 13px;
+  }
+  .customers__slider-next svg{
+    width: 18px;
+    height: 13px;
+  }
+  /* ----------------Footer-------------- */
+  .footer__top-content{
+    margin-right: 40px;
+  }
+  .footer__heading h2{
+    font-size: 36px;
+  }
+}
+
 
 /* ===============================530=================== */
 /* ----------------HEADER BODY-------------- */
@@ -1927,6 +2071,52 @@ body {
   .touch{
     background: none;
   }
+   /* ----------------Slider-------------- */
+
+.customers__slider-btn{
+  display: none;
+}
+
+.customers__quote{
+  line-height: 120%;
+  font-size: 14px;
+}
+
+.customers__slider-buttons{
+  margin: 0;
+}
+
+.questions__square{
+  width: 40px;
+  height: 37px;
+}
+
+.questions__square::after, .questions__square::before {
+  right: 14px;
+  width: 14px;
+}
+
+/* ----------------Footer-------------- */
+.footer__top-inner{
+  flex-direction: column;
+}
+.footer__top-content{
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.footer__bottom-list{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.footer__bottom-item{
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 }
 
 /* ===============================450=================== */
@@ -1996,6 +2186,27 @@ body {
     transform: scale(1.05);
     box-shadow: none;
   }
+
+/* ---------------------------Contact */
+
+
+
+.contact__box{
+  flex-direction: column;
+  
+}
+
+.contact__form{
+  margin-bottom: 35px;
+  margin-right: 35px;
+}
+
+.contact__form-btn{
+  font-size: 12px;
+}
+
+
+
 }
 
 
@@ -2131,4 +2342,14 @@ body {
     align-items: center;
     text-align: center;
   }
+  /* ----------------Footer */
+.footer__top-subtitle{
+  font-size: 10px;
 }
+  .footer__top-text{
+    font-size: 12px;
+  }
+}
+
+
+
