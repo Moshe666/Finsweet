@@ -891,11 +891,11 @@ body.lock {
   margin-right: 16px;
   overflow: hidden;
   border-radius: 50%;
-  
+
 
 }
 
-.customers__avatar img{
+.customers__avatar img {
   width: 100%;
   height: auto;
 }
@@ -1037,6 +1037,7 @@ body.lock {
   display: block;
   padding: 40px;
   background-color: #fff;
+
 }
 
 .questions__acc {}
@@ -1061,6 +1062,7 @@ body.lock {
   height: 48px;
   background-color: #FF6433;
   position: relative;
+  
 }
 
 .questions__square::after,
@@ -1073,6 +1075,7 @@ body.lock {
   height: 2px;
   border-radius: 2px;
   background-color: #fff;
+
 }
 
 .questions__square::after {
@@ -1092,7 +1095,9 @@ body.lock {
   letter-spacing: -0.03em;
   color: #1E1B1B;
   position: relative;
-  margin-right: 10px;
+  margin-right: 15px;
+  max-width: 300px;
+
 }
 
 .questions__acc-text {
@@ -1133,7 +1138,7 @@ body.lock {
   display: flex;
   flex-direction: column;
   margin-right: 139px;
-  width: 626px;
+  max-width: 624px;
 }
 
 
@@ -1173,6 +1178,8 @@ body.lock {
   display: flex;
   margin-right: 50px;
   line-height: 27px;
+  
+
 }
 
 .contact__form-checkbox {
@@ -1181,6 +1188,7 @@ body.lock {
   height: 16px;
   margin-right: 12px;
   flex: 0 0 auto;
+  
 
 }
 
@@ -1214,7 +1222,6 @@ body.lock {
 
 .contact__info {
   font-style: normal;
-  /* margin-bottom: 350px; */
 }
 
 .contact__address, .contact__details {
@@ -1629,7 +1636,7 @@ body.lock {
 
   .header__user-nav {
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 
   /* ----------------ABOUT-------------- */
@@ -1871,6 +1878,19 @@ body.lock {
     margin: 0 auto;
     max-width: 400px;
   }
+
+  /* ---------------------------TOUCH */
+
+  .touch__content {
+    padding: 50px 70px;
+    display: flex;
+    text-align: center;
+  }
+
+
+
+
+
 }
 
 /* ===============================730=================== */
@@ -1915,6 +1935,14 @@ body.lock {
   .questions__acc-text {
     font-size: 12px;
   }
+
+  /* ----------------TOUCH-------------- */
+
+
+  .touch__content {
+    padding: 60px 40px;
+  }
+
 
   /* ---------------------------Contact */
 
@@ -1990,17 +2018,39 @@ body.lock {
     font-size: 18px;
   }
 
-  #map{
-    
+  #map {}
+
+  /* ----------------TOUCH-------------- */
+  .touch__heading h2 {
+    font-size: 36px;
+    line-height: 110%;
+
+  }
+
+  .touch__content {
+    padding: 60px 80px;
+  }
+
+  .touch__button {
+    font-size: 16px;
+    padding: 12px 40px
+  }
+
+  .touch {
+    background: none;
   }
 
 
   /* ----------------------EXPIRIENCE */
 
   .expirience__list {
-    font-size: 40px;
+    font-size: 36px;
+
+  }
 
 
+  .expirience__title {
+    font-size: 34px;
   }
 
   .expirience__item {
@@ -2008,7 +2058,8 @@ body.lock {
   }
 
   .expirience__subtitle {
-    font-size: 16px;
+    font-size: 14px;
+
   }
 
   /* ----------------Slider-------------- */
@@ -2247,18 +2298,13 @@ body.lock {
     font-size: 12px
   }
 
-  /* .customers__avatar img{
-    width: 100%;
-    height: auto;
-
-  } */
   /* ---------------------------Contact */
 
 
 
   .contact__box {
     flex-direction: column;
-    
+
 
   }
 
@@ -2271,10 +2317,35 @@ body.lock {
     font-size: 12px;
   }
 
+  .contact__checkbox-label{
+    margin-right: 0;
+  }
+
+  /* ----------------TOUCH-------------- */
+  .touch__heading h2 {
+    font-size: 30px;
+    line-height: 110%;
+
+  }
+
+
+
+  .touch__button {
+    font-size: 12px;
+    padding: 12px 40px
+  }
+
+  .brands__heading h2 {
+    font-size: 26px;
+
+  }
+
+  .brands__logos svg {
+    transform: scale(0.8);
+  }
 
 
 }
-
 
 /* ===============================380=================== */
 /* ----------------HEADER BODY-------------- */
@@ -2413,6 +2484,26 @@ body.lock {
     text-align: center;
   }
 
+
+
+/* ---------------quest */
+
+.questions__square {
+  width: 23px;
+  height: 20px;
+}
+
+.questions__square::after, .questions__square::before {
+  right: 6px;
+  width: 12px;
+
+}
+.questions__acc-title{
+line-height: 26px;
+font-size: 9px;
+}
+
+
   /* ----------------Footer */
   .footer__top-subtitle {
     font-size: 10px;
@@ -2420,5 +2511,34 @@ body.lock {
 
   .footer__top-text {
     font-size: 12px;
+  }
+
+  .blog__filter-item {
+    margin-right: 20px;
+
+  }
+
+  .blog__filter-btn {
+    font-size: 16px;
+  }
+
+  .blog__link-title {
+    line-height: 24px;
+  }
+
+  .blog__link-text {
+    line-height: 20px;
+  }
+
+  .blog__link-content {
+    text-align: center;
+  }
+
+  .blog__link-content {
+    margin-bottom: 40px;
+  }
+
+  .blog__link-content:last-child {
+    margin-bottom: 0;
   }
 }
